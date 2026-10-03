@@ -10,7 +10,6 @@ export default async function fetchBooks(q?: string): Promise<BookData[]> {
     if (!res.ok) {
       throw new Error();
     }
-    console.log(res);
     return await res.json();
   } catch (err) {
     console.error(err);

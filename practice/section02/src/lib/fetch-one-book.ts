@@ -7,7 +7,6 @@ export default async function fetchOneBook(id: number): Promise<BookData | null>
     if (!res.ok) {
       throw new Error();
     }
-    console.log(res);
     return await res.json();
   } catch (err) {
     console.error(err);
